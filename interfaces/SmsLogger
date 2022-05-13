@@ -1,0 +1,10 @@
+
+// ILogger sinifindan kalitim aldirildi cunku bu log yazan bir sinif olacak ve bu sinifin ne yapacagini ILogger interface i soylesin istiyoruz
+public class SmsLogger : ILogger
+{
+    // interfacelerin metotlari implemente edilmeli. metot govdeleri bos birakilabilir
+    public void WriteLog()
+    {
+        Console.WriteLine("SMS olarak log yazar.");
+    }
+}
